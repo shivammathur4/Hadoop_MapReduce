@@ -1,10 +1,10 @@
 
 '''
 @Author: Shivam Mathur  
-@Date: 31-07-2021
-@Title : This is program to calculate matrix.
+@Date: 01-08-2021
+@Title : Program Aim is to work with matrix multiplication by using reducer.
 '''
-#! /home/shivammathur/Downloads/hadoop/Python2
+#! /home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/Matrix_Multiplication
 import sys
 m_r=2
 m_c=3
