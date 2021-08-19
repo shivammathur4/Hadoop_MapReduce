@@ -8,12 +8,12 @@ $ start-all.sh
 $ jps
 
 -Create a directory in HDFS, where to kept text file.
-$hadoop dfs -mkdir /Python_WC3
-$hdfs dfs -mkdir /Python_WC3/input/
+$hadoop dfs -mkdir /Python_WC4
+$hdfs dfs -mkdir /Python_WC4/input/
 
 
 -Add data.txt on HDFS
-$ hadoop dfs -put '/home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends' /Python_WC3/input/
+$ hadoop dfs -put '/home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends' /Python_WC4/input/
 
 -Write a map reduce code in python.
 Note:-There should be seperate files mapper.py, reducer.py
@@ -24,4 +24,4 @@ Run the code through terminal with following command
 
 Note:- Here we have to explicitly call python before Mapper and reducer as framework itself does not Know how to run mapper and reducer.
 
-$ hadoop jar /home/shivammathur/Downloads/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar -file /home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends/mapper.py -mapper mapper.py -file /home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends/reducer.py -reducer reducer.py -input /Python_WC3/input/input.txt -output /Python_WC3/output
+$ hadoop jar /home/shivammathur/Downloads/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.3.1.jar -file /home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends/mapper.py -mapper mapper.py -file /home/shivammathur/Downloads/hadoop/Hadoop_MapReduce/MapReducePrograms/commonFriends/reducer.py -reducer reducer.py -input /Python_WC4/input/input.txt -output /Python_WC4/output
